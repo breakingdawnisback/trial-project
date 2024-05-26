@@ -1,0 +1,290 @@
+.header {
+    background: linear-gradient(135deg, #a2a27b4d, transparent);
+    /* Yellow to blue gradient */
+    padding: 20px;
+    width: 66%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* Ensure the header appears above other content */
+}
+
+.header h1 {
+    font-family: "Angkor", serif;
+    /* Specify Angkor font */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    /* Set font size to 100px */
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #081d4b, rgb(14 15 16 / 76%)) #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    position: fixed;
+    transform: rotate(-15deg);
+    /* Fix the typo here */
+    top: -15%;
+    left: -11%;
+    width: 90%;
+    height: 130%;
+    background-image: url('—Pngtree—geometric\ calculation\ math\ problem_4653888.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    /* Ensure it's behind other content */
+}
+
+
+.body-moon {
+    border-radius: 50%;
+    width: 130%;
+    position: absolute;
+    height: 184%;
+    text-align: right;
+    margin-top: auto;
+    margin-right: -85%;
+    margin-bottom: auto;
+    margin-left: 57%;
+    border: 0px solid #717377;
+    padding: 0px;
+    background: linear-gradient(42deg, #185a62, #1f0c0cb0);
+    z-index: 3;
+}
+
+.form {
+    width: 60vh;
+    height: 60vh;
+    position: relative;
+    right: 0%;
+    align-items: center;
+    margin: 6% auto;
+    background: #4d3e3e;
+    box-shadow: inset -8px -16px 20px 20px #0e0a09;
+    border-radius: 4px;
+    padding: 20px 30px;
+    overflow: hidden;
+}
+
+.form .page {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+
+}
+
+.switch {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 30%;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+
+}
+
+#displayForm {
+    flex-grow: 1;
+    padding: 9px;
+    font-size: 7.6em;
+    border: 2px solid black;
+    border-radius: 65px;
+    width: 9px;
+}
+
+
+.toggle-btn {
+    position: relative;
+    padding: 12px 38px;
+    cursor: pointer;
+
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.toggle-btn2 {
+    position: relative;
+    padding: 12px 38px;
+    cursor: pointer;
+
+    background: transparent;
+    border: 0;
+    outline: none;
+
+}
+
+.calculator {
+
+    margin-top: auto;
+    /* Push to the bottom */
+    margin-right: 280px;
+    /* Center horizontally */
+    margin-bottom: auto;
+    /* Push to the bottom */
+    margin-left: auto;
+    /* Adjust as needed for spacing from the right */
+    background: transparent;
+
+    backdrop-filter: blur(10px);
+    z-index: 3;
+}
+
+.iinput-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#display {
+    flex-grow: 1;
+    padding: 40px 117px;
+    font-size: 2.6em;
+    background-color: transparent;
+    box-shadow: 8px -6px 20px 6px #06060533;
+    border: 2px solid #8c545400;
+    border-radius: 37px;
+}
+
+.button-startVoiceRecognition {
+    padding: 19px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.button-startVoiceRecognition img {
+    width: 91px;
+    /* Adjust the width as needed */
+    height: 91px;
+    /* Adjust the height as needed */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.page {
+    margin: auto;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-block: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 90px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#calculatorPage {
+    width: 100%;
+}
+
+button {
+    padding: 60px;
+    font-size: 2.5em;
+    margin: 3px 11px 11px 0px;
+    margin-left: 24px;
+    margin-top: 7px;
+    margin-right: 24px;
+    cursor: pointer;
+    border: 2px solid #d9b12e1c;
+    border-radius: 70px;
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 8px -6px 20px 6px #0d0d0ca8;
+}
+
+.history {
+    padding: 20px;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+}
+
+#historyList li {
+    padding: 19px;
+    font-size: 4em;
+    margin-bottom: 24px;
+    border-radius: 27px;
+}
+
+.form .outer {
+    width: 100%;
+    margin-top: 36%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#historyPage {
+    display: none;
+}
+
+.form #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 57%;
+    height: 100%;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.inner-container.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+}
+
+.calup {
+    background-color: #185a62;
+    padding: 100px;
+    border-radius: 160px 160px 0 0;
+}
+
+.caldow {
+    background-color: orange;
+    margin: 0 0px 42px 0px;
+    border-radius: 0 0 60px 60px;
+}

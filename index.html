@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Scientific Calculator</h1>
+    </div>
+
+    <div class="background-image"></div>
+    <div class="body-moon"></div>
+    <div class="form">
+        <div class="switch">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="togglePage('calculator')">Calculation</button>
+            <button type="button" class="toggle-btn2" onclick="togglePage('history')">History</button>
+        </div>
+     <div class="outer">
+        <div class="page" id="calculatorPage">
+            <label>Calculation</label>
+            <div class="inner-container">
+                <input type="text" id="displayForm" readonly>
+            </div>
+        </div>
+
+        <div class="page" id="historyPage">
+            <label>History</label>
+            <div class="inner-container history">
+                <ul id="historyList">
+                    <!-- Placeholder for history items -->
+                    <li>Calculation </li>
+                    <li>Calculation </li>
+                    <li>Calculation </li>
+                </ul>
+                </div>
+            </div>
+            </div>  
+        </div>
+      </div>
+    </div>
+   
+
+    <div class="calculator" id="calculator">
+       <div class="calup"> 
+        <div class="iinput-container">
+            <input type="text" id="display" readonly>
+ 
+        </div>
+       </div>  
+       
+       <div class="caldow">
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('/')">/</button>
+
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')">*</button>
+
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('-')">-</button>
+
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="appendToDisplay('00')">00</button>
+            <button onclick="appendToDisplay('+')">+</button>
+
+            <button onclick="appendToDisplay('Math.sqrt(')">√</button>
+            <button onclick="appendToDisplay('Math.pow(')">x^y</button>
+            <button onclick="appendToDisplay('Math.sin(')">sin</button>
+            <button onclick="appendToDisplay('Math.cos(')">cos</button>
+
+            <button onclick="appendToDisplay('Math.tan(')">tan</button>
+            <button onclick="appendToDisplay('Math.log10(')">log</button>
+            <button onclick="appendToDisplay('Math.PI')">π</button>
+            <button onclick="appendToDisplay('(')">(</button>
+
+            <button onclick="appendToDisplay('Math.exp(')">e^x</button>
+            <button onclick="appendToDisplay('Math.log(')">ln</button>
+            <button onclick="appendToDisplay('Math.E')">e</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button onclick="calculate()">=</button>
+            &nbsp;
+            <button class="button-startVoiceRecognition" onclick="startVoiceRecognition()">
+                <img src="speech-icon-2797263_1280.png" alt="Voice Icon">
+            </button>
+        </div>
+       </div> 
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+
+</html>
